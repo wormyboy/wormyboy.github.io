@@ -5,39 +5,70 @@
     <meta charset="utf-8">
     <style>
      /* GLOBAL STYLES */
-     a {
-       color: red;
-     }
+    a {
+       color: #f00;
+    }
+    html, body {
+      margin: 0;
+      padding: 0;
+    }
+    h1 {
+      font-size: 7vw;
+      margin-top: 0;
+    }
 
-     /* SOCIAL STYLES */
-     .social-link {
+    /* HERO STYLES */
+    .full-hero {
+      background-color: #c7dbfc;
+      height: 50vw;
+      width: 50vw;
+    }
+
+    /* SOCIAL STYLES */
+    .social-link {
+       background-color: lightgrey;
        color: blue;
-     }
+    }
 
-     /* BIO STYLES */
-     .bio-box {
+    /* BIO STYLES */
+    .bio-wrapper{
+       font-size: 24px;
+    }
+    .bio-box {
        border: 1px solid black;
-     }
-     .bio-copy a {
+       font-size: 1rem;
+       width: 50%;
+    }
+    .bio-box h3 {
+       font-size: 1.5em;
+    }
+    .bio-copy {
+      font-size: 1em;
+    }
+    .bio-copy a {
        color: green;
-     }
-     
+    }
     </style>
   </head>
   <body>
+
+    <div class="full-hero hero-home">
       <h1>I'm an h1</h1>
       <ul>
         <li>
-          <a href="https://example.com/">Link</a>
+          <a href="https://example.com/" class="social-link">Link</a>
         </li>
         <li>
-          <a href="https://example.com/">Link</a>
+          <a href="https://example.com/" class="social-link">Link</a>
         </li>
         <li>
-          <a href="https://example.com/">Link</a>
+          <a href="https://example.com/" class="social-link">Link</a>
         </li>
       </ul>
-      <h2>I'm an h2</h2>
+    </div>
+
+    <h2>I'm an h2</h2>
+    <div class="bio-wrapper">
       <div class="bio-box">
         <h3>Michael Hartl</h3>
         <a href="https://twitter.com/mhartl" class="social-link">here</a>
@@ -89,5 +120,6 @@
           </p>
         </div>
       </div>
-    </body>
+    </div>
+  </body>
 </html>
